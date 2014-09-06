@@ -29,7 +29,7 @@ public class PerfTracepointTest extends TestCase {
 	    method = Tracepoints.class.getDeclaredMethod("tracepoint0");
 	    assertNotNull("Method Tracepoints.tracepoint0 is null.", method);
 	} catch (NoSuchMethodException e) {
-	    assertTrue(false);
+	    assertTrue("Method tracepoint0 not found in class Tracepoints.", false);
 	}
 
 	PerfTracepoint tracepoint = method.getAnnotation(PerfTracepoint.class);
