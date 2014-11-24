@@ -1,12 +1,39 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
   <modelVersion>4.0.0</modelVersion>
+
   <groupId>com.twitter.diagnostics</groupId>
   <artifactId>PerfTracepoint</artifactId>
+  <version>1.0.0</version>
   <packaging>jar</packaging>
-  <version>1.0</version>
+
   <name>PerfTracepoint</name>
-  <url>http://maven.apache.org</url>
+  <description>Perf tracepoint support for the JVM.</description>
+  <url>http://github.com/twitter/PerfTracepoint</url>
+
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <name>Kaushik Srenevasan</name>
+      <email>kaushik@twitter.com</email>
+      <organization>Twitter</organization>
+      <organizationUrl>http://twitter.com/</organizationUrl>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git@github.com:twitter/PerfTracepoint.git</connection>
+    <url>scm:git:git@github.com:twitter/PerfTracepoint.git</url>
+    <developerConnection>scm:git:git@github.com:twitter/PerfTracepoint.git</developerConnection>
+  </scm>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -15,6 +42,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
   <build>
     <plugins>
       <plugin>
@@ -28,4 +56,5 @@
       </plugin>
     </plugins>
   </build>
+
 </project>
