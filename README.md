@@ -1,6 +1,14 @@
 ## PerfTracepoint [![Build Status](https://secure.travis-ci.org/twitter/PerfTracepoint.png?branch=master)](http://travis-ci.org/twitter/PerfTracepoint)
 
-Perf tracepoint support for the JVM
+com.twitter.diagnostics.PerfTracepoint is an annotation, which, when applied to a native
+method informs the (Twitter) JVM that it needs to treat it like a
+Linux user mode probe point that is observable by diagnostic tools
+such as the Perf profiler.
+
+    class FinagleProvider {
+        @PerfTracepoint
+        public static native void onThreadCreate(long threadId);
+    };
 
 ## License
 
