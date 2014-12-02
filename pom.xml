@@ -4,7 +4,7 @@
 
   <groupId>com.twitter.diagnostics</groupId>
   <artifactId>PerfTracepoint</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>PerfTracepoint</name>
@@ -31,7 +31,7 @@
     <connection>scm:git:git@github.com:twitter/PerfTracepoint.git</connection>
     <url>scm:git:git@github.com:twitter/PerfTracepoint.git</url>
     <developerConnection>scm:git:git@github.com:twitter/PerfTracepoint.git</developerConnection>
-    <tag>v1.0.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <dependencies>
