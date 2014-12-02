@@ -5,10 +5,12 @@ method informs the (Twitter) JVM that it needs to treat it like a
 Linux user mode probe point that is observable by diagnostic tools
 such as the Perf profiler.
 
-    class FinagleProvider {
-        @PerfTracepoint
-        public static native void onThreadCreate(long threadId);
-    };
+```java
+class FinagleProvider {
+    @PerfTracepoint
+    public static native void onThreadCreate(long threadId);
+};
+```
 
 ### Maven Central
 
@@ -17,7 +19,7 @@ The latest artifacts are published to Maven Central.
 Simply adding the following to your Maven pom.xml file should work:
 
 ```xml
-  <dependencies>
+<dependencies>
     <dependency>
       <groupId>com.twitter.diagnostics</groupId>
       <artifactId>PerfTracepoint</artifactId>
