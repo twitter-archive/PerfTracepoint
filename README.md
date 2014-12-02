@@ -10,6 +10,22 @@ such as the Perf profiler.
         public static native void onThreadCreate(long threadId);
     };
 
+### Maven Central
+
+The latest artifacts are published to Maven Central.
+
+Simply adding the following to your Maven pom.xml file should work:
+
+```xml
+  <dependencies>
+    <dependency>
+      <groupId>com.twitter.diagnostics</groupId>
+      <artifactId>PerfTracepoint</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+  </dependencies>
+```
+
 ## License
 
 Copyright 2014 Twitter, Inc and other contributors
